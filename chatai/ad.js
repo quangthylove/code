@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
     style.href = 'ad.css';
     document.head.appendChild(style);
 
+    const adPlaceholder = document.getElementById('ad-placeholder');
+
     const adContainer = document.createElement('div');
     adContainer.id = 'ad-container';
 
@@ -27,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     adContainer.appendChild(adContent);
     adContainer.appendChild(openAdButton);
-    document.body.appendChild(adContainer);
+    adPlaceholder.appendChild(adContainer);
 
     const closeAdButton = document.getElementById('close-ad');
     closeAdButton.addEventListener('click', function() {
