@@ -1,74 +1,73 @@
-/* ad.css */
-#ad-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99999;
-}
+      /* styles.css */
+        #ad-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99999;
+        }
 
-#ad-content {
-    display: none;
-    position: fixed;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #eee;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    top: 20px;
-    width: 90%;
-    max-width: 380px;
-    right: 10px;
-    height: 90%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 99999;
-}
+        #ad-content {
+            display: none;
+            position: fixed;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #eee;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            top: 20px;
+            width: 90%;
+            max-width: 380px;
+            right: 10px;
+            height: 90%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 99999;
+        }
 
-#ad-content button {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 4px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    position: absolute;
-    cursor: pointer;
-    top: 5px;
-    font-size: 20px;
-}
+        #ad-content button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 4px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            cursor: pointer;
+            top: 5px; font-size: 20px;
+        }
 
-#ad-content button:hover {
-    background-color: darkred;
-}
+        #ad-content button:hover {
+            background-color: darkred;
+        }
 
-#open-ad {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-}
+        #open-ad {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
 
-#open-ad:hover {
-    background-color: darkblue;
-}
+        #open-ad:hover {
+            background-color: darkblue;
+        }
 
-#ad-content iframe {
-    position: absolute;
-    top: 40px;
-    right: 0;
-    width: 100%;
-    height: calc(100% - 40px);
-    border: 0;
-}
+        #ad-content iframe {
+            position: absolute;
+            top: 40px;
+            right: 0;
+            width: 100%;
+            height: calc(100% - 40px);
+            border: 0;
+        }
