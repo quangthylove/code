@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const style = document.createElement('link');
     style.rel = 'stylesheet';
-    style.href = 'ad.css';
+    style.href = 'https://raw.githubusercontent.com/quangthylove/code/master/chatai/ad.css';
     document.head.appendChild(style);
 
     const adPlaceholder = document.getElementById('ad-placeholder');
