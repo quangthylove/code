@@ -78,26 +78,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const adContent = document.createElement('div');
     adContent.id = 'ad-content';
-    adContent.innerHTML = `
-        <p>
-            <iframe
-                src="https://play.thietkeweb30s.org/p/chatdemo.html"
-                allowfullscreen=""
-                loading="lazy">
-            </iframe>
-        </p>
-        <button id="close-ad">TẮT</button>
-    `;
+
+    const iframe = document.createElement('iframe');
+    iframe.src = "https://play.thietkeweb30s.org/p/chatdemo.html";
+    iframe.width = "100%";
+    iframe.height = "100%";
+    iframe.style.border = "0";
+    iframe.allowFullscreen = true;
+    iframe.loading = "lazy";
+
+    const closeAdButton = document.createElement('button');
+    closeAdButton.id = 'close-ad';
+    closeAdButton.textContent = 'TẮT';
 
     const openAdButton = document.createElement('button');
     openAdButton.id = 'open-ad';
     openAdButton.textContent = 'MỞ';
 
+    adContent.appendChild(iframe);
+    adContent.appendChild(closeAdButton);
     adContainer.appendChild(adContent);
     document.body.appendChild(adContainer);
     document.body.appendChild(openAdButton);
 
-    const closeAdButton = document.getElementById('close-ad');
     closeAdButton.addEventListener('click', function() {
         adContent.style.display = 'none';
         openAdButton.style.display = 'block';
